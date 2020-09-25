@@ -1,0 +1,157 @@
+:root {
+  --title-small-font-size: 13px;
+  --title-medium-font-size: 16px;
+  --title-large-font-size: 20px;
+
+  --title-small-line-height: 16px;
+  --title-medium-line-height: 20px;
+  --title-large-line-height: 24px;
+
+  --time-small-font-size: 11px;
+  --time-medium-font-size: 13px;
+  --time-large-font-size: 16px;
+
+  --time-small-line-height: 11px;
+  --time-medium-line-height: 13px;
+  --time-large-line-height: 16px;
+
+  --animation-delay: 100ms;
+}
+
+.momentCard {
+  position: relative;
+  display: block;
+  height: auto;
+  overflow: hidden;
+  user-select: none;
+
+  font-family: sarif, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  will-change: transform;
+  transition: background-color 0.2s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+}
+
+.momentCard_seekable {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.momentCard_seekable:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.momentCard_active,
+.momentCard_active:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.momentCard__title {
+  /* prevents blicking after random hover on text */
+  pointer-events: none;
+  transition: transform 0.25s ease;
+  margin: 0;
+  color: rgba(255, 255, 255, 1);
+}
+
+.momentCard_S .momentCard__title {
+  padding: 8px 24px 0 12px;
+  font-size: var(--title-small-font-size);
+  line-height: var(--title-small-line-height);
+}
+
+.momentCard_M .momentCard__title {
+  padding: 12px 32px 0 16px;
+  font-size: var(--title-medium-font-size);
+  line-height: var(--title-medium-line-height);
+}
+
+.momentCard_L .momentCard__title {
+  padding: 16px 40px 0 20px;
+  font-size: var(--title-large-font-size);
+  line-height: var(--title-large-line-height);
+}
+
+.momentCard__time {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.momentCard__time,
+.momentCard__time_placeholder,
+.momentCard__hovered {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.momentCard.momentCard_S .momentCard__time,
+.momentCard.momentCard_S .momentCard__time_placeholder,
+.momentCard.momentCard_S .momentCard__hovered {
+  padding: 8px 24px 8px 12px;
+  font-size: var(--time-small-font-size);
+  line-height: var(--time-small-line-height);
+}
+
+.momentCard.momentCard_M .momentCard__time,
+.momentCard.momentCard_M .momentCard__time_placeholder,
+.momentCard.momentCard_M .momentCard__hovered {
+  padding: 8px 32px 12px 16px;
+  font-size: var(--time-medium-font-size);
+  line-height: var(--time-medium-line-height);
+}
+
+.momentCard.momentCard_L .momentCard__time,
+.momentCard.momentCard_L .momentCard__time_placeholder,
+.momentCard.momentCard_L .momentCard__hovered {
+  padding: 12px 40px 16px 20px;
+  font-size: var(--time-large-font-size);
+  line-height: var(--time-large-line-height);
+}
+
+.momentCard__hovered {
+  position: absolute;
+  display: none;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.momentCard:hover .momentCard__hovered {
+  display: block;
+}
+
+.momentCard__hovered__text {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  padding-left: 5px;
+  color: #fff;
+}
+
+.momentCard__mark {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+}
+
+.momentCard_S .momentCard__mark {
+  top: 8px;
+  right: 8px;
+}
+
+.momentCard_M .momentCard__mark {
+  top: 12px;
+  right: 12px;
+}
+
+.momentCard_L .momentCard__mark {
+  top: 16px;
+  right: 16px;
+}

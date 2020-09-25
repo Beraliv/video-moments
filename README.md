@@ -4,7 +4,7 @@
 
 - [x] Add storybook
 - [ ] Implement lane without moments
-- [ ] Implement moment card
+- [x] Implement moment card
 - [ ] Add Jest
 - [ ] Implement scrollability
 - [ ] Implement video skin
