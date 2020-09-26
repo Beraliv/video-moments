@@ -32,6 +32,18 @@
   opacity: 0.5;
 }
 
+.momentCard.momentCard_S {
+  border-radius: 4px;
+}
+
+.momentCard.momentCard_M {
+  border-radius: 6px;
+}
+
+.momentCard.momentCard_L {
+  border-radius: 8px;
+}
+
 .momentCard_seekable {
   opacity: 1;
   cursor: pointer;
