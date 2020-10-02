@@ -1,0 +1,12 @@
+.scrollableLane {
+  /* move the panel to the left with scroll on the left */
+  position: absolute;
+  direction: ltr;
+  left: 0;
+
+  /* add the indent between scrollbar and the panel with cards */
+  padding-left: 10px;
+
+  /* for `width: 1000px` it sets the value up to eps=0.01 which is sufficient */
+  width: 66.66666%;
+}
