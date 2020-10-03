@@ -12,7 +12,7 @@ const DEFAULT_MOMENT_CARD_PARAMS: Omit<MomentCardParams, 'size'> = {
   onPlay: action('play moment'),
 };
 
-storiesOf('components/atoms/MomentCard', module)
+storiesOf('components/molecules/MomentCard', module)
   .addDecorator(storyFn => (
     <div style={{ position: 'relative', backgroundColor: '#ccc', width: 300 }}>{storyFn()}</div>
   ))

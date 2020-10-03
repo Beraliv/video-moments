@@ -6,7 +6,7 @@
 - [ ] Implement lane without moments
 - [x] Implement moment card
 - [ ] Add Jest
-- [ ] Implement scrollability
+- [x] Implement scrollability
 - [ ] Implement video skin
 - [ ] Add accessibility
 - [ ] Audit

@@ -1,0 +1,33 @@
+.testPlayerContainer,
+.simplePlayerContainer {
+  position: relative;
+
+  width: 480px;
+  height: 320px;
+
+  background-color: #ccc;
+}
+
+.testPlayerContainer {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  direction: rtl;
+}
+
+.testScrollPanel {
+  width: 320px;
+
+  /* move the panel to the left with scroll on the left */
+  position: absolute;
+  direction: ltr;
+  left: 0;
+
+  /* add the indent between scrollbar and the panel with cards */
+  padding-left: 10px;
+}
+
+.testMomentCard {
+  margin: 3px;
+}

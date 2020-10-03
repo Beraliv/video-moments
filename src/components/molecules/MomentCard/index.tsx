@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { noop } from '../../../functions/noop';
 import { responsiveClassName } from '../../../functions/responsiveClassName';
 import { SkinSize } from '../../../types/SkinSize';
-import { PlayIcon } from '../PlayIcon';
+import { PlayIcon } from '../../atoms/PlayIcon';
 import './index.css';
 
 export interface MomentCardParams {
