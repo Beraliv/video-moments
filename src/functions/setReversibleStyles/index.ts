@@ -1,5 +1,5 @@
 export function setReversibleStyles<K extends keyof CSSStyleDeclaration>(
-  element: HTMLElement,
+  element: Pick<HTMLElement, 'style'>,
   styles: Pick<CSSStyleDeclaration, K>,
 ): VoidFunction {
   const styleProperties = Object.keys(styles) as K[];
